@@ -170,13 +170,21 @@ REPEAT_END
 Python скрипты (.py)
 python
 # Пример Python скрипта
+
 for i in range(5):
+
     if api.is_stopped():
+    
         break
+        
     api.send("F1")
+    
     api.sleep(1)
+    
     api.log(f"Итерация {i+1} завершена")
+    
 🔧 Сборка в .exe
+
 Для сборки исполняемого файла используйте build_simple.bat:
 
 bash
@@ -185,19 +193,33 @@ build_simple.bat
 
 bash
 pyinstaller --onefile --windowed --icon="ico.ico" --name "SaveMoneyBot" --hidden-import=pyserial --hidden-import=PIL --hidden-import=configparser --clean --noconfirm "Save Money.py"
+
 📞 Команды Telegram
+
 Формат команд
+
 text
+
 /start_ComputerID    # Запустить бот на компьютере с ID
+
 /stop_ComputerID     # Остановить бот
+
 /status_ComputerID   # Получить статус
+
 /test_ComputerID     # Тестовое уведомление со скриншотом
+
 /shutdown_ComputerID # Выключить компьютер
+
 Примеры
+
 text
+
 /start_PC1        # Запустить на компьютере PC1
+
 /status_FarmPC    # Статус FarmPC
+
 /test_OfficePC    # Тест OfficePC
+
 ⚠️ Важные примечания
 Безопасность
 Программа эмулирует ввод с клавиатуры и мыши
