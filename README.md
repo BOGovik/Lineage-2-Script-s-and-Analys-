@@ -1,4 +1,4 @@
-# Lineage-2-Script-s-and-Analys-
+# Lineage-2 Script's and Analys
 
 <img width="884" height="952" alt="image" src="https://github.com/user-attachments/assets/5ae94047-abe8-4476-a899-d3ac8f2e6123" />
 
